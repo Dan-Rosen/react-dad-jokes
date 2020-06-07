@@ -28,8 +28,20 @@ class JokeList extends Component {
 
     render() {
         return (
-            <div>
-                <h1 className={styles.JokeList}>Dad Jokes</h1>
+            <div className={styles.JokeList}>
+                <div className={styles.JokeListSidebar}>
+                    <h1 className={styles.JokeListTitle}>
+                        <span>Dad</span> Jokes
+                    </h1>
+                    <img
+                        src='https://assets.dryicons.com/uploads/icon/svg/8927/0eb14c71-38f2-433a-bfc8-23d9c99b3647.svg'
+                        alt='crying laughing emoji'
+                    />
+                    <button className={styles.JokeListGetMore}>
+                        New Jokes
+                    </button>
+                </div>
+
                 <div className={styles.JokeListJokes}>
                     {this.state.jokes.map((j) => (
                         <div>{j}</div>
