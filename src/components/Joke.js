@@ -42,7 +42,7 @@ class Joke extends Component {
             <div className={styles.Joke}>
                 <div className={styles.JokeButtons}>
                     <i
-                        className={`fas fa-arrow-up ${styles.JokeVoteArrow}`}
+                        className={`fas fa-arrow-up ${styles.JokeVoteArrow} ${styles.JokeVoteArrowUp}`}
                         onClick={this.props.upvote}
                     ></i>
                     <span
@@ -52,7 +52,7 @@ class Joke extends Component {
                         {this.props.votes}
                     </span>
                     <i
-                        className={`fas fa-arrow-down ${styles.JokeVoteArrow}`}
+                        className={`fas fa-arrow-down ${styles.JokeVoteArrow} ${styles.JokeVoteArrowDown}`}
                         onClick={this.props.downvote}
                     ></i>
                 </div>
